@@ -41,7 +41,7 @@ export default function Home() {
               <li className="mr-3">
                 <a
                   className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4"
-                  href="#"
+                  href="#features"
                 >
                   Fitur
                 </a>
@@ -49,7 +49,7 @@ export default function Home() {
               <li className="mr-3">
                 <a
                   className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4"
-                  href="#"
+                  href="#download"
                 >
                   Unduh
                 </a>
@@ -65,7 +65,7 @@ export default function Home() {
                   height={8}
                   alt="Picture of the author"
                   className="md:w-4/5 max-w-[30px] max-h-[30px] pr-2"
-                  src="/github-mark.svg"
+                  src="github-mark.svg"
                 />
                 <p className="">GitHub</p>
               </button>
@@ -87,9 +87,11 @@ export default function Home() {
               lingkungan yang hijau. Dapatkan tunai melalui kontribusi anda,
               peroleh manfaat dari sampah anda.
             </p>
-            <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Unduh
-            </button>
+            <a href="bank_sampah_v0.1.1.apk">
+              <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Unduh
+              </button>
+            </a>
           </div>
           {/* <!--Right Col--> */}
           <div className="w-fit md:w-3/5 md:pr-24 py-6 text-center flex justify-end">
@@ -139,7 +141,7 @@ export default function Home() {
           </g>
         </svg>
       </div>
-      <section className="bg-white border-b py-8">
+      <section id="features" className="bg-white border-b py-8">
         <div className="container max-w-5xl mx-auto m-8">
           <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
             Fitur
@@ -269,7 +271,10 @@ export default function Home() {
         </g>
       </svg>
       <section className="container mx-auto text-center py-6 mb-12">
-        <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        <h2
+          id="download"
+          className="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
+        >
           Tunggu apa lagi?
         </h2>
         <div className="w-full mb-4">
@@ -278,9 +283,11 @@ export default function Home() {
         <h3 className="my-4 text-3xl leading-tight">
           Dapatkan aplikasinya sekarang!
         </h3>
-        <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Unduh Sekarang!
-        </button>
+        <a href="bank_sampah_v0.1.1.apk">
+          <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Unduh Sekarang!
+          </button>
+        </a>
       </section>
       {/* <!--Footer--> */}
       <footer className="bg-white">
