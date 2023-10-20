@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Script from 'next/script';
 
 export default function Home() {
@@ -8,9 +9,9 @@ export default function Home() {
       <nav id="header" className="fixed w-full z-30 top-0 text-white">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
           <div className="pl-4 flex items-center">
-            <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <Link className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
               Bank Sampah v.0.1.0
-            </a>
+            </Link>
           </div>
           <div className="block lg:hidden pr-4">
             <button
@@ -29,17 +30,22 @@ export default function Home() {
           >
             <ul id="nav-subs" className="list-reset lg:flex justify-end flex-1 items-center text-white">
               <li className="mr-3">
-                <a className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4" href="#features">
+                <Link className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4" href="#features">
                   Fitur
-                </a>
+                </Link>
               </li>
               <li className="mr-3">
-                <a className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4" href="#download">
+                <Link className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4" href="#download">
                   Unduh
-                </a>
+                </Link>
+              </li>
+              <li className="mr-3">
+                <Link className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4" href="privacy-policy" target="_blank">
+                  Kebijakan Privasi
+                </Link>
               </li>
             </ul>
-            <a href="https://github.com/ittggrgfthh/bank_sampah/releases/">
+            <Link href="https://github.com/ittggrgfthh/bank_sampah/releases/">
               <button
                 id="navAction"
                 className="mx-auto lg:mx-0 hover:underline align-middle bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-4 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out flex flex-row justify-center"
@@ -47,7 +53,7 @@ export default function Home() {
                 <Image width={8} height={8} alt="Picture of the author" className="md:w-4/5 max-w-[30px] max-h-[30px] pr-2" src="github-mark.svg" />
                 <p className="">GitHub</p>
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -62,11 +68,11 @@ export default function Home() {
               Dengan aplikasi Bank Sampah, jadilah bagian dari solusi untuk lingkungan yang hijau. Dapatkan tunai melalui kontribusi anda, peroleh
               manfaat dari sampah anda.
             </p>
-            <a href="bank_sampah_v0.1.1.apk">
+            <Link href="bank_sampah_v0.1.1.apk">
               <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Unduh
               </button>
-            </a>
+            </Link>
           </div>
           {/* <!--Right Col--> */}
           <div className="w-fit md:w-3/5 md:pr-24 py-6 text-center flex justify-end">
@@ -138,7 +144,7 @@ export default function Home() {
           {/* admin */}
           <div className="flex flex-wrap">
             <div className="w-5/6 sm:w-1/2 p-6">
-              n<h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Admin</h3>
+              <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Admin</h3>
               <ul className="text-black">
                 <li>Melihat laporan bulanan berdasarkan desa yang dipilih</li>
                 <li>Mencetak laporan bulanan berdasarkan desa yang dipilih `pdf`</li>
@@ -190,11 +196,11 @@ export default function Home() {
           <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <h3 className="my-4 text-3xl leading-tight">Dapatkan aplikasinya sekarang!</h3>
-        <a href="bank_sampah_v0.1.1.apk">
+        <Link href="bank_sampah_v0.1.1.apk">
           <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Unduh Sekarang!
           </button>
-        </a>
+        </Link>
       </section>
       {/* <!--Footer--> */}
       <footer className="bg-white">
