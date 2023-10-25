@@ -6,21 +6,21 @@ export default function Home() {
   return (
     <>
       {/* <!--Nav--> */}
-      <nav id="header" className="fixed w-full z-30 top-0 text-white">
+      <nav
+        id="header"
+        className="fixed w-full z-30 top-0 text-black bg-white shadow"
+      >
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
           <div className="pl-4 flex items-center">
-            <Link
-              className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            <a
+              className="text-2xl lg:text-4xl font-bold no-underline hover:no-underline"
               href="#"
             >
-              Bank Sampah v.0.1.0
-            </Link>
+              Bank Sampah
+            </a>
           </div>
-          <div className="block lg:hidden pr-4">
-            <button
-              id="nav-toggle"
-              className="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            >
+          <div className="block lg:hidden pr-4" id="nav-toggle">
+            <button className="flex items-center p-1 text-slate-800 hover:text-slate-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
               <svg
                 className="fill-current h-6 w-6"
                 viewBox="0 0 20 20"
@@ -32,63 +32,38 @@ export default function Home() {
             </button>
           </div>
           <div
-            className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+            className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 p-4 lg:p-0 z-20"
             id="nav-content"
           >
-            <ul
-              id="nav-subs"
-              className="list-reset lg:flex justify-end flex-1 items-center text-white"
-            >
+            <ul className="list-reset lg:flex justify-end flex-1 items-center">
               <li className="mr-3">
-                <Link
-                  className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4"
+                <a
+                  className="inline-block no-underline hover:font-semibold hover:scale-105 py-2 px-4"
                   href="#features"
                 >
                   Fitur
-                </Link>
+                </a>
               </li>
               <li className="mr-3">
-                <Link
-                  className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4"
-                  href="#download"
-                >
-                  Unduh
-                </Link>
-              </li>
-              <li className="mr-3">
-                <Link
-                  className="inline-block  no-underline hover:font-semibold hover:scale-105 py-2 px-4"
+                <a
+                  className="inline-block no-underline hover:font-semibold hover:scale-105 py-2 px-4"
                   href="privacy-policy"
                   target="_blank"
                 >
                   Kebijakan Privasi
-                </Link>
+                </a>
               </li>
             </ul>
-            <Link href="https://github.com/ittggrgfthh/bank_sampah/releases/">
-              <button
-                id="navAction"
-                className="mx-auto lg:mx-0 hover:underline align-middle bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-4 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out flex flex-row justify-center"
-              >
-                <Image
-                  width={8}
-                  height={8}
-                  alt="Picture of the author"
-                  className="md:w-4/5 max-w-[30px] max-h-[30px] pr-2"
-                  src="github-mark.svg"
-                />
-                <p className="">GitHub</p>
-              </button>
-            </Link>
           </div>
         </div>
         <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
       </nav>
+
       {/* <!--Hero--> */}
       <div className="py-24">
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           {/* <!--Left Col--> */}
-          <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          <div className="flex flex-col w-full md:ps-2 md:w-2/5 justify-center items-start text-center md:text-left">
             <h1 className="my-4 text-5xl font-bold leading-tight">
               Kumpulkan sampah, tukar Rupiah
             </h1>
@@ -97,10 +72,18 @@ export default function Home() {
               lingkungan yang hijau. Dapatkan tunai melalui kontribusi anda,
               peroleh manfaat dari sampah anda.
             </p>
-            <Link href="bank_sampah_v0.1.2.apk">
-              <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Unduh
-              </button>
+            <Link
+              className="w-full flex justify-center md:justify-start"
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=id.my.charapon.banksampah&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            >
+              <Image
+                width={646}
+                height={250}
+                className="w-3/5 h-auto md:w-9/12"
+                alt="Temukan di Google Play"
+                src="/google-play-badge.png"
+              />
             </Link>
           </div>
           {/* <!--Right Col--> */}
@@ -282,25 +265,33 @@ export default function Home() {
       <section className="container mx-auto text-center py-6 mb-12">
         <h2
           id="download"
-          className="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
+          className="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center text-white"
         >
           Tunggu apa lagi?
         </h2>
         <div className="w-full mb-4">
           <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-        <h3 className="my-4 text-3xl leading-tight">
+        <h3 className="my-4 text-xl md:text-3xl leading-tight">
           Dapatkan aplikasinya sekarang!
         </h3>
-        <Link href="bank_sampah_v0.1.1.apk">
-          <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            Unduh Sekarang!
-          </button>
+        <Link
+          className="w-full flex justify-center"
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=id.my.charapon.banksampah&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+        >
+          <Image
+            width={646}
+            height={250}
+            className="w-3/5 h-auto md:w-4/12 lg:w-3/12"
+            alt="Temukan di Google Play"
+            src="/google-play-badge.png"
+          />
         </Link>
       </section>
       {/* <!--Footer--> */}
       <footer className="bg-white">
-        <div className="container mx-auto px-8 text-black flex justify-center">
+        <div className="container mx-auto px-8 text-black flex justify-center text-center">
           <p>© Developer Team | Bank Sampah 2023. All Right Reserved</p>
         </div>
         {/* <a
