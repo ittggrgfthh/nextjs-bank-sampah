@@ -1,55 +1,35 @@
-import Image from "next/image";
-import Link from "next/link";
-import Script from "next/script";
+import Image from 'next/image';
+import Link from 'next/link';
+import Script from 'next/script';
 
 export default function Home() {
   return (
     <>
       {/* <!--Nav--> */}
-      <nav
-        id="header"
-        className="fixed w-full z-30 top-0 text-black bg-white shadow"
-      >
+      <nav id="header" className="fixed w-full z-30 top-0 text-black bg-white shadow">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
           <div className="pl-4 flex items-center">
-            <a
-              className="text-2xl lg:text-4xl font-bold no-underline hover:no-underline"
-              href="#"
-            >
+            <a className="text-2xl lg:text-4xl font-bold no-underline hover:no-underline" href="#">
               Bank Sampah
             </a>
           </div>
           <div className="block lg:hidden pr-4" id="nav-toggle">
             <button className="flex items-center p-1 text-slate-800 hover:text-slate-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              <svg
-                className="fill-current h-6 w-6"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <title>Menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
             </button>
           </div>
-          <div
-            className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 p-4 lg:p-0 z-20"
-            id="nav-content"
-          >
+          <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 p-4 lg:p-0 z-20" id="nav-content">
             <ul className="list-reset lg:flex justify-end flex-1 items-center">
               <li className="mr-3">
-                <a
-                  className="inline-block no-underline hover:font-semibold hover:scale-105 py-2 px-4"
-                  href="#features"
-                >
+                <a className="inline-block no-underline hover:font-semibold hover:scale-105 py-2 px-4" href="#features">
                   Fitur
                 </a>
               </li>
               <li className="mr-3">
-                <a
-                  className="inline-block no-underline hover:font-semibold hover:scale-105 py-2 px-4"
-                  href="privacy-policy"
-                  target="_blank"
-                >
+                <a className="inline-block no-underline hover:font-semibold hover:scale-105 py-2 px-4" href="privacy-policy" target="_blank">
                   Kebijakan Privasi
                 </a>
               </li>
@@ -64,52 +44,29 @@ export default function Home() {
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           {/* <!--Left Col--> */}
           <div className="flex flex-col w-full md:ps-2 md:w-2/5 justify-center items-start text-center md:text-left">
-            <h1 className="my-4 text-5xl font-bold leading-tight">
-              Kumpulkan sampah, tukar Rupiah
-            </h1>
+            <h1 className="my-4 text-5xl font-bold leading-tight">Kumpulkan sampah, tukar Rupiah</h1>
             <p className="leading-normal text-2xl mb-8">
-              Dengan aplikasi Bank Sampah, jadilah bagian dari solusi untuk
-              lingkungan yang hijau. Dapatkan tunai melalui kontribusi anda,
-              peroleh manfaat dari sampah anda.
+              Dengan aplikasi Bank Sampah, jadilah bagian dari solusi untuk lingkungan yang hijau. Dapatkan tunai melalui kontribusi anda, peroleh
+              manfaat dari sampah anda.
             </p>
             <Link
               className="w-full flex justify-center md:justify-start"
               target="_blank"
               href="https://play.google.com/store/apps/details?id=id.my.charapon.banksampah&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
             >
-              <Image
-                width={646}
-                height={250}
-                className="w-3/5 h-auto md:w-9/12"
-                alt="Temukan di Google Play"
-                src="/google-play-badge.png"
-              />
+              <Image width={646} height={250} className="w-3/5 h-auto md:w-9/12" alt="Temukan di Google Play" src="/google-play-badge.png" />
             </Link>
           </div>
           {/* <!--Right Col--> */}
           <div className="w-fit md:w-3/5 md:pr-24 py-6 text-center flex justify-end">
-            <Image
-              width={270}
-              height={600}
-              alt="Picture of the author"
-              className="md:w-4/5 max-w-[230px] max-h-[510px]"
-              src="/whatever.png"
-            />
+            <Image width={270} height={600} alt="Picture of the author" className="md:w-4/5 max-w-[230px] max-h-[510px]" src="/whatever.png" />
           </div>
         </div>
       </div>
       <div className="relative -mt-12 lg:-mt-24">
-        <svg
-          viewBox="0 0 1428 174"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g
-              transform="translate(-2.000000, 44.000000)"
-              fill="#FFFFFF"
-              fill-rule="nonzero"
-            >
+        <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+            <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fillRule="nonzero">
               <path
                 d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
                 opacity="0.100000001"
@@ -124,11 +81,7 @@ export default function Home() {
                 opacity="0.200000003"
               ></path>
             </g>
-            <g
-              transform="translate(-4.000000, 76.000000)"
-              fill="#FFFFFF"
-              fill-rule="nonzero"
-            >
+            <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fillRule="nonzero">
               <path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
             </g>
           </g>
@@ -136,18 +89,14 @@ export default function Home() {
       </div>
       <section id="features" className="bg-white border-b py-8">
         <div className="container max-w-5xl mx-auto m-8">
-          <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Fitur
-          </h2>
+          <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Fitur</h2>
           <div className="w-full mb-4">
             <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
           {/* warga */}
           <div className="flex flex-wrap">
             <div className="w-5/6 sm:w-1/2 p-6">
-              <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Warga
-              </h3>
+              <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Warga</h3>
               <ul className="text-black">
                 <li>Melihat saldo saat ini</li>
                 <li>Melihat jumlah sampah yang sudah di depositkan</li>
@@ -155,41 +104,21 @@ export default function Home() {
               </ul>
             </div>
             <div className="w-full sm:w-1/2 p-6">
-              <Image
-                width={8}
-                height={8}
-                alt="Picture of the author"
-                className="md:w-4/5 w-full max-h-[200px]"
-                src="warga.svg"
-              />
+              <Image width={8} height={8} alt="Picture of the author" className="md:w-4/5 w-full max-h-[200px]" src="warga.svg" />
             </div>
           </div>
           {/* staff */}
           <div className="flex flex-wrap flex-col-reverse sm:flex-row">
             <div className="w-full sm:w-1/2 p-6 mt-6">
-              <Image
-                width={8}
-                height={8}
-                alt="Picture of the author"
-                className="md:w-4/5 w-full max-h-[200px]"
-                src="staff.svg"
-              />
+              <Image width={8} height={8} alt="Picture of the author" className="md:w-4/5 w-full max-h-[200px]" src="staff.svg" />
             </div>
             <div className="w-full sm:w-1/2 p-6 mt-6">
               <div className="align-middle">
-                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                  Staff
-                </h3>
+                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Staff</h3>
                 <ul className="text-black">
                   <li>Mencatat deposit sampah warga</li>
-                  <li>
-                    Memodifikasi catatan deposit sampah warga dalam jangka waktu
-                    yang sudah ditentukan
-                  </li>
-                  <li>
-                    Melihat daftar transaksi yang telah dilakukan `deposit
-                    sampah` atau `tarik saldo`
-                  </li>
+                  <li>Memodifikasi catatan deposit sampah warga dalam jangka waktu yang sudah ditentukan</li>
+                  <li>Melihat daftar transaksi yang telah dilakukan `deposit sampah` atau `tarik saldo`</li>
                   <li>Melakukan penarikan saldo warga</li>
                 </ul>
               </div>
@@ -198,48 +127,28 @@ export default function Home() {
           {/* admin */}
           <div className="flex flex-wrap">
             <div className="w-5/6 sm:w-1/2 p-6">
-              <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Admin
-              </h3>
+              <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Admin</h3>
               <ul className="text-black">
                 <li>Melihat laporan bulanan berdasarkan desa yang dipilih</li>
-                <li>
-                  Mencetak laporan bulanan berdasarkan desa yang dipilih `pdf`
-                </li>
+                <li>Mencetak laporan bulanan berdasarkan desa yang dipilih `pdf`</li>
                 <li>Membuat pengguna baru</li>
                 <li>Memodifikasi pengguna lama</li>
-                <li>
-                  Mengetahui semua daftar pengguna `warga`, `staff` dan `admin`
-                </li>
+                <li>Mengetahui semua daftar pengguna `warga`, `staff` dan `admin`</li>
                 <li>Mengubah harga sampah organik dan an-organik per kg</li>
-                <li>
-                  Mengetahui riwayat perubahan harga sampah organik maupun
-                  an-organik
-                </li>
+                <li>Mengetahui riwayat perubahan harga sampah organik maupun an-organik</li>
               </ul>
             </div>
             <div className="w-full sm:w-1/2 p-6">
-              <Image
-                width={8}
-                height={8}
-                alt="Picture of the author"
-                className="md:w-4/5 w-full max-h-[200px]"
-                src="admin.svg"
-              />
+              <Image width={8} height={8} alt="Picture of the author" className="md:w-4/5 w-full max-h-[200px]" src="admin.svg" />
             </div>
           </div>
         </div>
       </section>
 
       {/* <!-- Change the colour #f8fafc to match the previous section colour --> */}
-      <svg
-        className="wave-top"
-        viewBox="0 0 1439 147"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+      <svg className="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+          <g transform="translate(-1.000000, -14.000000)" fillRule="nonzero">
             <g className="wave" fill="#f8fafc">
               <path d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"></path>
             </g>
@@ -263,30 +172,19 @@ export default function Home() {
         </g>
       </svg>
       <section className="container mx-auto text-center py-6 mb-12">
-        <h2
-          id="download"
-          className="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center text-white"
-        >
+        <h2 id="download" className="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center text-white">
           Tunggu apa lagi?
         </h2>
         <div className="w-full mb-4">
           <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-        <h3 className="my-4 text-xl md:text-3xl leading-tight">
-          Dapatkan aplikasinya sekarang!
-        </h3>
+        <h3 className="my-4 text-xl md:text-3xl leading-tight">Dapatkan aplikasinya sekarang!</h3>
         <Link
           className="w-full flex justify-center"
           target="_blank"
           href="https://play.google.com/store/apps/details?id=id.my.charapon.banksampah&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
         >
-          <Image
-            width={646}
-            height={250}
-            className="w-3/5 h-auto md:w-4/12 lg:w-3/12"
-            alt="Temukan di Google Play"
-            src="/google-play-badge.png"
-          />
+          <Image width={646} height={250} className="w-3/5 h-auto md:w-4/12 lg:w-3/12" alt="Temukan di Google Play" src="/google-play-badge.png" />
         </Link>
       </section>
       {/* <!--Footer--> */}
